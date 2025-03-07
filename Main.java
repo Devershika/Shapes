@@ -39,3 +39,28 @@ class Main {
                     Shape circle = new Circle(radius);
                     displayShapeDetails(circle);
                     break;
+
+                case 4:
+                    System.out.print("Enter radius of Sphere: ");
+                    double sphereRadius = scan.nextDouble();
+                    Shape sphere = new Sphere(sphereRadius);
+                    displayShapeDetails(sphere);
+                    break;
+
+                case 5:
+                    System.out.print("Enter radius of Cylinder: ");
+                    double cylinderRadius = scan.nextDouble();
+                    System.out.print("Enter height of Cylinder: ");
+                    double cylinderHeight = scan.nextDouble();
+                    Shape cylinder = new Cylinder(cylinderRadius, cylinderHeight);
+                    displayShapeDetails(cylinder);
+                    break;
+
+                case 6:
+                    System.out.print("Enter side of Equilateral Pyramid: ");
+                    double pyramidSide = scan.nextDouble();
+                    System.out.print("Enter height of Equilateral Pyramid: ");
+                    double pyramidHeight = scan.nextDouble();
+                    Shape pyramid = new EquilateralPyramid(pyramidSide, pyramidHeight);
+                    displayShapeDetails(pyramid);
+                    break;
