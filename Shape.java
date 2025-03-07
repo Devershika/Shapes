@@ -7,3 +7,15 @@ abstract class Shape {
         this.dim_one = this.dim_two = 0;
         this.num_sides = 0;
     }
+
+
+    // Parameterized Constructor for 2D Shapes
+    public Shape(double dim_one, double dim_two, int num_sides) {
+        this.dim_one = dim_one;
+        this.dim_two = dim_two;
+        this.num_sides = num_sides;
+    }
+
+    // Abstract methods
+    abstract double calculateArea();
+    abstract double calculatePerimeter();
