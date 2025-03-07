@@ -19,3 +19,14 @@ abstract class Shape {
     // Abstract methods
     abstract double calculateArea();
     abstract double calculatePerimeter();
+
+
+    // Default method for volume (returns 0 for 2D shapes)
+    public double calculateVolume() {
+        return 0.0;
+    }
+
+    public int getNumSides() {
+        return num_sides;
+    }
+}
