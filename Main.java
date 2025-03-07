@@ -64,3 +64,22 @@ class Main {
                     Shape pyramid = new EquilateralPyramid(pyramidSide, pyramidHeight);
                     displayShapeDetails(pyramid);
                     break;
+
+                case 7:
+                    System.out.println("Exiting program...");
+                    break;
+
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
+        } while (choice != 7);
+
+        scan.close();
+    }
+
+    private static void displayShapeDetails(Shape shape) {
+        System.out.println("Area of " + shape.getClass().getSimpleName() + " is: " + shape.calculateArea());
+        System.out.println("Perimeter of " + shape.getClass().getSimpleName() + " is: " + shape.calculatePerimeter());
+        System.out.println("Volume of " + shape.getClass().getSimpleName() + " is: " + shape.calculateVolume());
+    }
+}
