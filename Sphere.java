@@ -8,3 +8,8 @@ class Square extends Shape {
         return dim_one * dim_one;
     }
 
+    @Override
+    public double calculatePerimeter() {
+        return 4 * dim_one;
+    }
+}
