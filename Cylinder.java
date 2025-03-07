@@ -11,3 +11,15 @@ class Cylinder extends Shape {
         return 2 * Math.PI * dim_one * (dim_one + height);
     }
 
+    
+    @Override
+    public double calculatePerimeter() {
+        return 2 * Math.PI * dim_one;
+    }
+
+    @Override
+    public double calculateVolume() {
+        return Math.PI * dim_one * dim_one * height;
+    }
+}
+
